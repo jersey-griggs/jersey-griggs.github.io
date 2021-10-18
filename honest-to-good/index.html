@@ -1,0 +1,63 @@
+---
+layout: page
+title: Honest to Good Blog
+description: "Honest to Good Blog"
+use_dark_main: true
+---
+<section class="section topo-map">
+<div class="container">
+  <div class="columns">
+      <div class="column first">
+        {% for post in site.posts | limit:1 %}
+        <div class="card pointer feature" onclick="location.href='{{ post.url | relative_url }}';">
+          <img class="feature-post-image" src="{{ post.image }}" alt="{{ post.title }}"/>
+          <div class="card-content">
+            <h5 class="post-date">{{ post.date | date: '%B %d, %Y'  }} | {{ post.categories }}</h5>
+            <h2 class="small half-margin">
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h2>
+            <div>{{ post.content | strip_html | truncatewords:95 }}</div>
+            <a class="button" href="{{ post.url | relative_url }}"><strong>Read More</strong></a>
+          </div>
+        </div>
+          {% endfor %}
+      </div>
+      <div class="column">
+        {% for post in site.posts | offset: 1 | limit:3 %}
+        <div class="card pointer blog-roll" onclick="location.href='{{ post.url | relative_url }}';">
+          <div class="img-container" style="background-image:url({{ post.image }});"></div>
+          <div class="card-content">
+            <h5 class="post-date">{{ post.date | date: '%B %d, %Y'  }} | {{ post.categories }}</h5>
+            <h2 class="small half-margin">
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h2>
+            <a class="button" href="{{ post.url | relative_url }}"><strong>Read More</strong></a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+</div>
+</section>
+<section class="section light-hero">
+<div class="text container">
+  {% for post in site.posts | offset: 4 %}
+      <!-- <img src="{{ post.image }}" alt="{{ post.title }}"> -->
+      <section class="section">
+      <h5 class="post-date">{{ post.date | date: '%B %d, %Y'  }} | {{ post.categories }}</h5>
+      <h2 class="small half-margin">
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h2>
+      <p>{{ post.content | strip_html | truncatewords:25 }}</p>
+      <a class="button" href="{{ post.url | relative_url }}"><strong>Read More</strong></a>
+    </section>
+        <hr>
+  {% endfor %}
+  </div>
+</section>

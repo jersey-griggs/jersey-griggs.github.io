@@ -3,7 +3,7 @@
   {%- include head.html -%}
   <body>
     {%- include header.html -%}
-    <main class="main" aria-label="Content">
+    <main class="main{% if page.use_dark_main == true%} dark-hero{% endif %}" aria-label="Content">
         {{ content }}
     </main>
     {%- include footer.html -%}
