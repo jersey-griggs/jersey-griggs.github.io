@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Halloween"
+title:  "One More Post"
 description: "Lorem ipsum dolor sit amet."
-date:   2017-10-31 22:44:29 -0400
+date:   2017-09-31 22:44:29 -0400
 categories:
   - Health & Wellness
 image: "/images/big-leaf.jpg"
