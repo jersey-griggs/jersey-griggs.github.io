@@ -81,7 +81,8 @@ h1 {
   font-weight: 600;
   &.post-title {
     font-size: 2.7rem;
-    margin-top: 3rem;
+    margin-top: 1.4rem;
+
     @media (max-width: 767px) {
           font-size: 1.8rem;
           line-height: 0;

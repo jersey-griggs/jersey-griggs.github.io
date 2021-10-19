@@ -4,7 +4,10 @@ layout: default
 <article class="post">
     <div class="container">
       <header class="post-header">
-        <h1 class="post-title serif{% if page.use_dark_main == true%} inverted{% endif %}">{{ page.title | escape }}</h1>
+        <h1 class="no-margin-bottom post-title serif{% if page.use_dark_main == true%} inverted{% endif %}">{{ page.title | escape }}</h1>
+        {% if page.subtitle %}
+        <h4 class="no-margin-top{% if page.use_dark_main == true%} inverted{% endif %}">{{ page.subtitle }}</h4>
+        {% endif %}
       </header>
     </div>
   <div class="post-content">
