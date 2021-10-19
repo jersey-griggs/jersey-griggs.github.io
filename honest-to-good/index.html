@@ -18,7 +18,7 @@ use_dark_main: true
                 {{ post.title | escape }}
               </a>
             </h2>
-            <div>{{ post.content | strip_html | truncatewords:95 }}</div>
+            <div>{{ post.content | strip_html | truncatewords:50 }}</div>
             <a class="button" href="{{ post.url | relative_url }}"><strong>Read More</strong></a>
           </div>
         </div>
@@ -30,11 +30,12 @@ use_dark_main: true
           <div class="img-container" style="background-image:url({{ post.image }});"></div>
           <div class="card-content">
           <h5 class="post-date"><strong>{{ post.categories }}</strong> | <em>{{ post.date | date: '%B %d, %Y'  }}</em></h5>
-            <h2 class="small half-margin">
+            <h2 class="small no-margin">
               <a class="post-link" href="{{ post.url | relative_url }}">
                 {{ post.title | escape }}
               </a>
             </h2>
+            <p>{{ post.description }}</p>
             <a class="button" href="{{ post.url | relative_url }}"><strong>Read More</strong></a>
           </div>
         </div>
@@ -48,14 +49,22 @@ use_dark_main: true
   {% for post in site.posts | offset: 4 %}
       <!-- <img src="{{ post.image }}" alt="{{ post.title }}"> -->
       <section class="section">
-      <h5 class="post-date"><strong>{{ post.categories }}</strong> | <em>{{ post.date | date: '%B %d, %Y'  }}</em></h5>
-      <h2 class="small half-margin">
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a>
-      </h2>
-      <p>{{ post.content | strip_html | truncatewords:25 }}</p>
-      <a class="button" href="{{ post.url | relative_url }}"><strong>Read More</strong></a>
+        <div class="columns">
+          <div class="column first">
+            <img src="{{ post.image }}" alt="{{ post.title }}">
+          </div>
+          <div class="column">
+            <h5 class="post-date"><strong>{{ post.categories }}</strong> | <em>{{ post.date | date: '%B %d, %Y'  }}</em></h5>
+            <h2 class="small no-margin">
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h2>
+            <p>{{ post.content | strip_html | truncatewords:25 }}</p>
+            <a class="button" href="{{ post.url | relative_url }}"><strong>Read More</strong></a>
+          </div>
+        </div>
+
     </section>
         <hr>
   {% endfor %}
