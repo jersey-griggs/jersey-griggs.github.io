@@ -507,7 +507,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
        padding: 32px 0;
      }
     h1 {
-      font-size: 5.76rem;
+      font-size: 3.76rem;
       margin-top: 0;
       @media (max-width: 767px) {
         font-size: 3.4rem;
@@ -515,8 +515,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     }
 
     h2 {
-      font-size: 2.8rem;
-      letter-spacing: 0.045em;
+      font-size: 2.1rem;
+      margin-bottom: 0;
       @media (max-width: 767px) {
         font-size: 1.6rem;
       }
