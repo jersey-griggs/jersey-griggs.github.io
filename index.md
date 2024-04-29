@@ -5,12 +5,10 @@ description: "Need a freelance writer for hire? I provide copy writing for missi
 ---
 Hey there! Thanks for stopping by.
 
-I’m a Maine-based freelance writer and editor with a passion for interesting perspectives and thoughtful words.
+I’m a Maine-based freelance writer with a passion for interesting perspectives and thoughtful words.  In my journalism career, I cover wellness, outdoor adventure, travel, and lifestyle topics on digital and print platforms.
 
-I cover wellness, outdoor adventure, travel, and lifestyle topics on digital and print platforms.
+I’m a contributor to Business Insider, Newsweek, Condé Nast Traveler, Roadtrippers Magazine, Outside Magazine, The Discoverer, Daily Passport, How to Be a Freelance Blogger, Travel Trivia, Trip Trivia, Outside Bozeman, The Sunrise Guide, Herbstalk, and Elephant JournaI.
 
-My work has been featured in Business Insider, The Discoverer, Travel Trivia, Seeqr, The Sunrise Guide, Herbstalk and Elephant Journal.
+I also write creative fiction and poetry, and am currently seeking representation for Dark Summer, the first installment of my Young Adult paranormal mystery series, Widow Lake.
 
-I also work with clients in a varied capacity to assist with their writing needs. To learn more, head over to my services page.
-
-If you have a project you’d like to discuss, please **[reach out to me](/#contact)** directly. I look forward to hearing from you!
+If you’re a literary agent interested in learning more, or you have a writing or editing project you'd like to discuss,  **[reach out to me](/#contact)** directly. I'd love to hear from you!
