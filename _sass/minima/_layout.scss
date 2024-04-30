@@ -522,8 +522,6 @@ img[alt]::after {
   img {
     margin-top: 0;
     border-radius: 0.2rem;
-    position: sticky;
-    top: 90px;
   }
 
   h2 {
@@ -708,6 +706,11 @@ img[alt]::after {
         grid-template-columns:230px 35vw;
         padding: 0 0 50px 0;
         gap: .4rem;
+
+        img {
+          position: sticky;
+          top: 90px;
+        }
         @media(max-width: 768px) {
           grid-template-columns: 1fr;
         }
