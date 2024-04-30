@@ -177,6 +177,7 @@ article {
   display: grid;
   grid-template-columns: 33vw;
   transition: box-shadow .22s ease;
+  border: 1px solid #452c2e21;
   &.blog-roll {
     grid-template-columns: 12vw;
     margin-top: 1.3rem;
