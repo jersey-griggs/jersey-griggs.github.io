@@ -12,7 +12,7 @@ layout: default
           {%- if page.title -%}
           <h1 class="align-left serif">{{ page.title }}</h1>
           {%- endif -%}
-          <h2 class="align-left serif">Lifestyle Journalist and Creative Fiction Writer</h2>
+          <h2 class="align-left serif">Lifestyle Journalist and<br>Creative Fiction Writer</h2>
         </div>
       </div>
     </div>
@@ -46,7 +46,8 @@ layout: default
         {% for content in portfolio limit:6 %}
         <div class="portfolio card mix {{ content.category | remove: " "  | remove: "&" }}">
           <a target="_blank" href="{{ content.url }}">
-            <div class="img-container" style="background-image: url({{ content.image }});">
+            <div class="img-container">
+              <img src="{{ content.image }}" alt="{{ content.title }}"/>
             </div>
             <div class="card-content">
               <h4 class="no-margin">{{ content.title }}</h4>
