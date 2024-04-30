@@ -522,6 +522,8 @@ img[alt]::after {
   img {
     margin-top: 0;
     border-radius: 0.2rem;
+    position: sticky;
+    top: 90px;
   }
 
   h2 {
