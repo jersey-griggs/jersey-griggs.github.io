@@ -661,6 +661,10 @@ img[alt]::after {
   margin: 0;
   padding: 0;
   text-align: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
 
   li {
     display: inline-block;
