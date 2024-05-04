@@ -220,6 +220,7 @@ footer {
     
     &:hover .img-container img {
       filter: brightness(110%);
+      transform: scale(1.03);
       /* Adjust the percentage to lighten or darken as desired */
     }
 
@@ -227,6 +228,7 @@ footer {
       position: relative;
       overflow: hidden;
       display: flex;
+
       img {
         object-fit: cover;
         border-radius: .2rem 0 0 .2rem;
@@ -234,7 +236,7 @@ footer {
         display: block;
         width: 100%;
         height: auto;
-        transition: filter 0.3s ease-in-out; /* Add a smooth transition effect */
+        transition: all 0.3s ease-in-out; /* Add a smooth transition effect */
   
       }
       img[alt] {
