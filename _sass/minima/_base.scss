@@ -49,6 +49,8 @@
 html {
   @include interpolate(font-size, 320px, 1366px, 16px, 20px);
   height: 100%;
+  scroll-padding-top: 78px;
+  scroll-behavior: smooth;
 }
 
 

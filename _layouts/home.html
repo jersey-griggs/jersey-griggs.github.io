@@ -19,7 +19,9 @@ layout: default
     <div class="container">
       <div class="filter-wrap greeting">
         <div class="column">
-          <img src="/images/headshot-2021.jpg" alt="Jersey Griggs" />
+          <picture class="headshot">
+            <img src="images/headshot-2021.jpg" alt="Jersey Griggs">
+          </picture>
         </div>
         <div class="column">
           <p class="no-margin-top">Hey there! Thanks for stopping by.</p>
@@ -56,15 +58,15 @@ layout: default
       <p class="align-center"><a href="/portfolio/"><strong>View Portfolio</strong></a></p>
     </div>
   </section>
-  <section class="section tight-padding-top zig-zag">
-    <div class="text container">
-      {% include testimonial-slider.html %}
-    </div>
-  </section>
   <section class="section dark-topo" id="contact">
     <div class="text container align-center inverted">
           <h2>Contact Me</h2>
           <p>Interested in discussing a project? I'd love to hear from you! Email me at <strong>jerseygriggs.writes@gmail.com</strong>.</p>
+    </div>
+  </section>
+  <section class="section tight-padding-top zig-zag">
+    <div class="text container">
+      {% include testimonial-slider.html %}
     </div>
   </section>
   <!-- Jarallax -->
@@ -74,7 +76,7 @@ layout: default
     var mq = window.matchMedia("(min-width: 767px)");
     if (mq.matches) {
       jarallax(document.querySelectorAll('.jarallax'), {
-        speed: 1.1,
+        speed: 1.05,
         type: "scroll-opacity"
       });
     }
