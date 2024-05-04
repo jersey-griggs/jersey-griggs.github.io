@@ -525,7 +525,7 @@ img[alt]::after {
   }
 
   h2 {
-    font-size: 1.61rem;
+    font-size: 3rem;
   }
 
   h2:first-of-type,
@@ -537,8 +537,10 @@ img[alt]::after {
   .hero {
     background-image: url("/images/sunflower.jpg");
      position: relative;
-     background-position-y: center;
+     background-position-y: top;
      background-size: cover;
+     background-attachment: fixed;
+  
      @media (max-width: 767px) {
        padding: 32px 0;
      }
@@ -664,7 +666,7 @@ img[alt]::after {
   display: flex;
   gap: 1rem;
   justify-content: center;
-}
+
 
   li {
     display: inline-block;
