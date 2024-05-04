@@ -210,11 +210,11 @@ footer {
   }
   &.portfolio {
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 24px;
+    margin-top: 32px;
     // background-color: #fff9f8;
 
     .card-content {
-      padding: 12px 36px;
+      padding: 24px 36px;
     }
 
     .img-container {
