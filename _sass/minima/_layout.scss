@@ -217,12 +217,25 @@ footer {
       padding: 24px 36px;
     }
 
+    
+    &:hover .img-container img {
+      filter: brightness(110%);
+      /* Adjust the percentage to lighten or darken as desired */
+    }
+
     .img-container {
+      position: relative;
+      overflow: hidden;
       display: flex;
       img {
         object-fit: cover;
         border-radius: .2rem 0 0 .2rem;
         margin: 0;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s ease-in-out; /* Add a smooth transition effect */
+  
       }
       img[alt] {
         position: relative;
