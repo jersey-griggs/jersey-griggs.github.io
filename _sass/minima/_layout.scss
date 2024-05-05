@@ -736,6 +736,9 @@ img[alt]::after {
         img {
           position: sticky;
           top: 90px;
+          background: #fedbd170;
+          padding: 0.9rem;
+          border: 1px solid #452c2e21;
         }
         @media(max-width: 768px) {
           grid-template-columns: 1fr;
