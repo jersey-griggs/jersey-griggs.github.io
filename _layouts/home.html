@@ -41,7 +41,7 @@ layout: default
       <div class="portfolio-wrap home">
         {% assign portfolio = site.data.portfolio %}
         {% for content in portfolio limit:6 %}
-        <div class="portfolio card mix {{ content.category | remove: " "  | remove: "&" }}">
+        <div class="portfolio card mix pointer {{ content.category | remove: " "  | remove: "&" }}" onclick="window.location.href='{{ content.url }}'">
           <a target="_blank" href="{{ content.url }}">
             <div class="img-container">
               <img class="portfolio-image" src="{{ content.image }}" alt="{{ content.title }}" loading="lazy"/>

@@ -34,7 +34,7 @@ description: "Check out my collection of published articles, blog posts, and web
       <div class="portfolio-wrap">
         {% assign portfolio = site.data.portfolio %}
         {% for content in portfolio %}
-        <div class="portfolio card mix {{ content.category | remove: " "  | remove: "&" }}">
+        <div class="portfolio card mix pointer {{ content.category | remove: " "  | remove: "&" }}" onclick="window.location.href='{{ content.url }}'">
           <a target="_blank" href="{{ content.url }}">
             <div class="img-container">
               <img src="{{ content.image }}" alt="{{ content.title }}" loading="lazy"/>
