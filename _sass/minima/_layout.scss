@@ -754,7 +754,7 @@ img[alt]::after {
     grid-template-columns:215px 1fr;
     position: relative;
     z-index: 2;
-    @media(max-width: 600px) {
+    @media(max-width: 1040px) {
       grid-template-columns: 1fr;
       margin-top: 0px;
     }
