@@ -732,13 +732,19 @@ img[alt]::after {
         padding: 0 0 50px 0;
         gap: .4rem;
 
+        .headshot {
+          height: 100vh;
+          overflow: hidden;
+        }
         img {
           position: sticky;
-          top: 90px;
+          top: 112px;
           background: #fedbd170;
           padding: 0.25rem;
           border: 1px solid #452c2e21;
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+          width: 100%;
+          transition: filter 0.3s ease;
         }
         @media(max-width: 768px) {
           grid-template-columns: 1fr;

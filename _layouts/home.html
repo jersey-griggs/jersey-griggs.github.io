@@ -20,7 +20,7 @@ layout: default
       <div class="filter-wrap greeting">
         <div class="column pl-0">
           <picture class="headshot">
-            <img src="images/headshot-2021.jpg" alt="Jersey Griggs">
+            <img src="images/headshot-2021.jpg" alt="Jersey Griggs" id="lighten-image">
           </picture>
         </div>
         <div class="column py-o">
@@ -81,3 +81,18 @@ layout: default
       });
     }
   </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY;
+    var image = document.getElementById('lighten-image');
+    var maxScale = 1.15;
+    var scale = Math.min(1 + (scrollPosition * 0.0005), maxScale); // Adjust the scaling factor as needed
+
+    image.style.transform = 'scale(' + scale + ')';
+  });
+});
+
+
+</script>
