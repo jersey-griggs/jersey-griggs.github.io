@@ -234,12 +234,15 @@ footer {
 
       img {
         object-fit: cover;
-        border-radius: 3rem 0 0 3rem;
+        border-radius: 3rem 3rem 0 0;
         margin: 0;
         display: block;
         width: 100%;
         height: auto;
         transition: all 0.3s ease-in-out; /* Add a smooth transition effect */
+        @media (min-width: 601px) {
+          border-radius: 3rem 0 0 3rem;
+        }
   
       }
       img[alt] {
@@ -581,7 +584,7 @@ img[alt]::after {
       margin-bottom: 0;
       margin-top: 1rem;
       line-height: 3rem;
-      letter-spacing: 0.05rem;
+      letter-spacing: 0.03rem;
       @media (max-width: 767px) {
         font-size: 1.6rem;
         margin-bottom: 2rem;
