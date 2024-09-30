@@ -576,6 +576,7 @@ img[alt]::after {
       letter-spacing: -0.05rem;
       @media (max-width: 767px) {
         font-size: 3.4rem;
+        line-height: 1.1;
       }
     }
 
@@ -588,6 +589,7 @@ img[alt]::after {
       @media (max-width: 767px) {
         font-size: 1.6rem;
         margin-bottom: 2rem;
+        line-height: 1.4;
       }
     }
 
