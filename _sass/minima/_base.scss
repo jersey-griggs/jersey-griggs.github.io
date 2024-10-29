@@ -72,7 +72,7 @@ h3,
 h4,
 h5 {
   @include interpolate((padding-top, padding-bottom), 20rem, 70rem, 0rem, 0.5rem);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-weight: 500;
   line-height: 1.4;
 }
@@ -139,7 +139,7 @@ a {
   font-family: 'Lora', serif;
 }
 .sanserif {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
 }
 .inverted {
   color: #fff9f8;

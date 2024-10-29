@@ -6,7 +6,7 @@
   position: fixed;
   z-index: 9;
   top: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   box-shadow: inherit;
   -webkit-box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
   box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
@@ -802,7 +802,7 @@ img[alt]::after {
   border: 1px solid #9fa1ac2e;
   margin-top: 8px;
   border-radius: 4px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
 
   &:hover {
     color: #442c2e;
